@@ -8,7 +8,7 @@ const Index: React.FC = () => {
   const { sourceTheme, setSourceTheme } = useTheme();
   const [sources, setSources] = useState<string[]>([]);
   const [chatCount, setChatCount] = useState(0);
-  const maxChats = 3;
+  const maxChats = 5;
 
   // Determine current agent based on sourceTheme
   const currentAgent = sourceTheme === 'nodejs' ? 'nodejs' : sourceTheme === 'javascript' ? 'javascript' : 'default';

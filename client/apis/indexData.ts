@@ -25,7 +25,7 @@ export async function indexData(
     }
 
     const response = await axios.post<IndexDataResponse>(
-      import.meta.env.VITE_BACKEND_AI_API,
+      `${import.meta.env.VITE_BACKEND_AI_API}indexData`,
       formData,
       {
         headers: {
