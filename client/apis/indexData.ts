@@ -25,7 +25,7 @@ export async function indexData(
     }
 
     const response = await axios.post<IndexDataResponse>(
-      "http://localhost:3000/indexData",
+      import.meta.env.VITE_BACKEND_AI_API,
       formData,
       {
         headers: {
