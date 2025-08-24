@@ -160,7 +160,7 @@ const AddContentModal: React.FC<AddContentModalProps> = ({
                 <input
                   type="file"
                   multiple
-                  accept=".pdf,.csv,.txt,.md,.doc,.docx"
+                  accept=".pdf,.csv,.txt,.md,.doc,.docx, .vtt"
                   onChange={handleFileChange}
                   className="hidden"
                 />
@@ -170,7 +170,7 @@ const AddContentModal: React.FC<AddContentModalProps> = ({
                     Choose files to upload
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    PDF, CSV, TXT, MD, DOC, DOCX
+                    PDF, CSV, TXT, MD, DOC, DOCX, VTT
                   </p>
                 </div>
               </label>
